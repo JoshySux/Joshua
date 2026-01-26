@@ -351,3 +351,77 @@ footer a {
 .coming-soon {
   pointer-events: none;
 }
+
+
+/* ===========================
+   MOBILE RESPONSIVE STYLES
+   =========================== */
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    min-height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .home h1 {
+    font-size: 1.8rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .reveal {
+    transform: translateY(20px);
+    filter: blur(6px);
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.9rem;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 6px;
+  }
+}
